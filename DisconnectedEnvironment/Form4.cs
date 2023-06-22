@@ -139,7 +139,7 @@ namespace DisconnectedEnvironment
             cmd.Parameters.Add(new SqlParameter("tahun_masuk", tahunMasuk));
             cmd.ExecuteNonQuery();
             connection.Close();
-            MessageBox.Show("Data berhasil disimpan", "Sukses!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("The data has been successfully saved in the database.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             refreshForm();
             dataGridView();
         }

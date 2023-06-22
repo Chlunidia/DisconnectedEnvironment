@@ -75,11 +75,11 @@ namespace DisconnectedEnvironment
             string idProdi = idp.Text;
             if (nmProdi == "")
             {
-                MessageBox.Show("Masukkan Nama Prodi", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Enter the Program Study Name!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if(idProdi == "")
             {
-                MessageBox.Show("Masukkan ID Prodi", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Enter the Program Study ID!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -91,7 +91,7 @@ namespace DisconnectedEnvironment
                 cmd.Parameters.AddWithValue("@nama_prodi", nmProdi);
                 cmd.ExecuteNonQuery();
                 connection.Close();
-                MessageBox.Show("Data berhasil disimpan", "Sukses!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("The data has been successfully saved in the database.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataGridView();
                 refreshForm();
             }

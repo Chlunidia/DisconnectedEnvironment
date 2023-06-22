@@ -142,8 +142,17 @@ namespace DisconnectedEnvironment
                 command.ExecuteNonQuery();
                 connection.Close();
 
-                MessageBox.Show("Data has been saved to the database.");
+                MessageBox.Show("The data has been successfully saved in the database.");
             }
+            txtNIM.Enabled = false;
+            txtNama.Enabled = false;
+            txtAlamat.Enabled = false;
+            cbxJK.Enabled = false;
+            dtTanggalLahir.Enabled = false;
+            cbxProdi.Enabled = false;
+            btnAdd.Enabled = true;
+            btnSave.Enabled = false;
+            btnClear.Enabled = false;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
